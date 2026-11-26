@@ -12,7 +12,7 @@
   const hash = (str) => { let h = 2166136261; for (const ch of str) h = Math.imul(h ^ ch.charCodeAt(0), 16777619); return h >>> 0; };
   const FULL = /^\d{4}-\d{2}-\d{2}$/;
 
-  let D, ISSUE = {}, EV = {}, UND = {}, YEARCOUNT = {}, LAST = {};
+  let D, ISSUE = {}, EV = {}, UND = {}, MEM = {}, YEARCOUNT = {}, LAST = {};
   const st = { sec: 'a', view: 'year', issue: {}, year: {}, org: null };
 
   fetch('data.json').then((r) => r.json()).then((data) => { D = data; prepare(); bind(); render(); })
@@ -23,6 +23,7 @@
     // 횟수 기준: 입장 '부합' 기록, 같은 단체·같은 사건·같은 날 = 1회
     D.records.filter((r) => r.stance === '부합').forEach((r) => {
       const k = r.org + '\u0000' + r.issue;
+      if (r.type === '연대체 가입') { (MEM[k] ||= []).push(r); return; }
       if (r.date && FULL.test(r.date)) {
         (EV[k] ||= {});
         (EV[k][r.date] ||= []).push(r);
@@ -51,6 +52,9 @@
     return [...s];
   };
   const endOf = (i) => (i.open ? Math.max(i.start, LAST[i.key] || i.start) : i.end);
+  const memOf = (ik) => [...new Set(Object.keys(MEM).filter((k) => k.endsWith('\u0000' + ik)).map((k) => k.split('\u0000')[0]))]
+    .filter((o) => !nEv(o, ik) && !nUnd(o, ik)).sort((a, b) => a.localeCompare(b, 'ko'));
+  const isMem = (org, ik) => !!MEM[org + '\u0000' + ik];
   const curIssue = () => {
     const list = issuesOf(st.sec);
     let k = st.issue[st.sec];
@@ -59,10 +63,25 @@
   };
 
   function bind() {
+    const all = [...new Set(D.records.filter((r) => r.stance === '부합').map((r) => r.org))].sort((a, b) => a.localeCompare(b, 'ko'));
+    $('org-list').innerHTML = all.map((o) => `<option value="${esc(o)}"></option>`).join('');
+    const go = () => {
+      const v = $('q').value.trim(); if (!v) return;
+      const o = all.find((x) => x === v) || all.find((x) => x.includes(v));
+      if (!o) { $('q-msg').textContent = '찾는 단체가 기록에 없습니다'; return; }
+      $('q-msg').textContent = '';
+      const hasIn = (sec) => issuesOf(sec).find((i) => nEv(o, i.key) || nUnd(o, i.key) || isMem(o, i.key));
+      const sec = hasIn(st.sec) ? st.sec : (hasIn('a') ? 'a' : 'b');
+      const hit = hasIn(sec);
+      st.sec = sec; st.issue[sec] = hit.key; st.year[sec] = hit.start; st.org = o;
+      render(); $('org').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    $('q').addEventListener('change', go);
+    $('q').addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
     document.querySelectorAll('.seg button').forEach((b) => b.addEventListener('click', () => { st.view = b.dataset.view; render(); }));
     $('cross-btn').addEventListener('click', () => {
       const other = st.sec === 'a' ? 'b' : 'a';
-      const hit = issuesOf(other).find((i) => nEv(st.org, i.key) || nUnd(st.org, i.key));
+      const hit = issuesOf(other).find((i) => nEv(st.org, i.key) || nUnd(st.org, i.key) || isMem(st.org, i.key));
       st.sec = other;
       if (hit) { st.issue[other] = hit.key; st.year[other] = hit.start; }
       render();
@@ -78,7 +97,8 @@
   function renderStats() {
     const orgs = new Set(D.records.filter((r) => r.stance === '부합').map((r) => r.org));
     const total = Object.values(EV).reduce((a, b) => a + Object.keys(b).length, 0);
-    $('stats').innerHTML = [['사건', D.issues.length], ['단체', orgs.size], ['참여 기록', total], ['출처', Object.keys(D.sources).length]]
+    const mem = Object.values(MEM).length;
+    $('stats').innerHTML = [['사건', D.issues.length], ['단체', orgs.size], ['직접 활동', total], ['연대체 가입', mem], ['출처', Object.keys(D.sources).length]]
       .map(([k, v]) => `<div><span>${k}</span><b>${v}</b></div>`).join('');
     $('foot-note').textContent = D.note || '';
   }
@@ -173,8 +193,13 @@
     $('issue-rule').textContent = issue.rule;
     const items = orgsIn(issue.key).map((o) => ({ name: o, n: nEv(o, issue.key), u: nUnd(o, issue.key) }))
       .map((o) => ({ ...o, w: o.n || 0.6 })).sort((a, b) => b.w - a.w || a.name.localeCompare(b.name, 'ko'));
-    $('issue-over').textContent += ` · 참여 단체 ${items.length}곳`;
-    if (!items.length) { $('field').innerHTML = '<div class="empty">아직 수집된 기록이 없습니다.</div>'; return; }
+    const mems = memOf(issue.key);
+    $('issue-over').textContent += ` · 직접 활동 단체 ${items.length}곳` + (mems.length ? ` · 연대체 가입 ${mems.length}곳` : '');
+    $('members-box').hidden = !mems.length;
+    $('members-title').textContent = `연대체 참가단체 명단에만 있는 단체 ${mems.length}곳 보기`;
+    $('members').innerHTML = mems.map((o) => `<button type="button" class="mchip" data-o="${esc(o)}" aria-pressed="${o === st.org}">${esc(o)}</button>`).join('');
+    $('members').querySelectorAll('.mchip').forEach((b) => b.addEventListener('click', () => { st.org = b.dataset.o; render(); $('org').scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
+    if (!items.length) { $('field').innerHTML = '<div class="empty">아직 수집된 직접 활동 기록이 없습니다.</div>'; if (!st.org || !inSection(st.org)) st.org = mems[0] || st.org; return; }
     const H = mobile() ? 1000 : 520;
     $('field').style.aspectRatio = `1000/${H}`;
     const placed = layout(items, hash(issue.key), H);
@@ -195,7 +220,7 @@
     }));
   }
 
-  const inSection = (org) => issuesOf(st.sec).some((i) => nEv(org, i.key) || nUnd(org, i.key));
+  const inSection = (org) => issuesOf(st.sec).some((i) => nEv(org, i.key) || nUnd(org, i.key) || isMem(org, i.key));
 
   function renderOrg(issue) {
     const org = st.org, list = issuesOf(st.sec);
@@ -204,9 +229,9 @@
     $('org-name').textContent = org;
     $('org-sum').textContent = `· 사건 ${k}개 · 총 ${tot}회`;
     $('org-cells').innerHTML = list.map((i, idx) => {
-      const n = cnt[idx], u = nUnd(org, i.key);
-      const cls = i.key === issue.key ? 'oc cur' : n || u ? 'oc' : 'oc zero';
-      return `<button type="button" class="${cls}" data-k="${i.key}" aria-label="${esc(i.name)} ${n}회"><span style="font-size:14px;font-weight:500">${esc(i.short)}</span><br><span style="font-size:12px;opacity:.8">${esc(i.period)}</span><b>${n}<small>회</small></b>${u ? `<span style="font-size:12px;opacity:.8">+날짜 미확인 ${u}</span>` : ''}</button>`;
+      const n = cnt[idx], u = nUnd(org, i.key), m = isMem(org, i.key);
+      const cls = i.key === issue.key ? 'oc cur' : n || u || m ? 'oc' : 'oc zero';
+      return `<button type="button" class="${cls}" data-k="${i.key}" aria-label="${esc(i.name)} ${n}회"><span style="font-size:14px;font-weight:500">${esc(i.short)}</span><br><span style="font-size:12px;opacity:.8">${esc(i.period)}</span><b>${n}<small>회</small></b>${u ? `<span style="font-size:12px;opacity:.8">+날짜 미확인 ${u}</span><br>` : ''}${m ? '<span class="badge">연대체 가입</span>' : ''}</button>`;
     }).join('');
     $('org-cells').querySelectorAll('.oc').forEach((b) => b.addEventListener('click', () => {
       st.issue[st.sec] = b.dataset.k; st.year[st.sec] = ISSUE[b.dataset.k].start; render();
@@ -219,10 +244,15 @@
       Object.entries(byDate).forEach(([d, rs]) => rows.push({ d, i, rs }));
       const und = UND[org + '\u0000' + i.key];
       if (und) rows.push({ d: null, i, rs: und });
+      (MEM[org + '\u0000' + i.key] || []).forEach((r) => rows.push({ d: r.date, i, rs: [r], mem: true }));
     });
     rows.sort((a, b) => (b.d || '0000') .localeCompare(a.d || '0000'));
-    $('org-evs').innerHTML = rows.length ? rows.map(({ d, i, rs }) => {
+    $('org-evs').innerHTML = rows.length ? rows.map(({ d, i, rs, mem }) => {
       const r0 = rs[0];
+      if (mem) {
+        const s = D.sources[r0.source];
+        return `<div class="ev"><div class="d">${d ? esc(d) + ' 기준' : '기준일 미확인'}</div><div><b style="color:var(--strong)">${esc(i.short)}</b> <span class="muted">· 연대체 가입 · ${esc(r0.coalition)} 참가단체 명단</span><div class="src"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.outlet)} · ${esc(s.title)}</a></div></div></div>`;
+      }
       const meta = [r0.location, [...new Set(rs.map((r) => r.type))].join('/'), [...new Set(rs.map((r) => r.role))].join('/')].filter(Boolean).map(esc).join(' · ');
       const srcs = [...new Set(rs.map((r) => r.source))].map((sk) => {
         const s = D.sources[sk];
@@ -235,6 +265,9 @@
     const oc = issuesOf(other).map((i) => nEv(org, i.key));
     const ok = oc.filter((x) => x).length, ot = oc.reduce((a, b) => a + b, 0);
     const ou = issuesOf(other).reduce((a, i) => a + nUnd(org, i.key), 0);
-    $('cross-txt').innerHTML = `「${esc(SECTIONS[other].title)}」에서는 · <b style="color:var(--strong)">${ok ? `사건 ${ok}개 · 총 ${ot}회` : ou ? `날짜 미확인 기록 ${ou}건` : '확인된 기록 없음'}</b>`;
+    const om = issuesOf(other).filter((i) => isMem(org, i.key)).length;
+    $('cross-txt').innerHTML = `「${esc(SECTIONS[other].title)}」에서는 · <b style="color:var(--strong)">${ok ? `사건 ${ok}개 · 총 ${ot}회` : ou ? `날짜 미확인 기록 ${ou}건` : om ? '' : '확인된 기록 없음'}${om ? `${ok || ou ? ' · ' : ''}연대체 가입 ${om}건` : ''}</b>`;
+    const mk = list.filter((i) => isMem(org, i.key)).length;
+    if (mk) $('org-sum').textContent += ` · 연대체 가입 ${mk}건`;
   }
 })();
