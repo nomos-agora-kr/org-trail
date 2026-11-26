@@ -1,0 +1,2120 @@
+{
+ "generated": "2026-11-26",
+ "note": "1차 수집(웹 검색 기반). 출처 본문에 단체명이 직접 나온 기록만 포함.",
+ "issues": [
+  {
+   "key": "gangjeong_2007",
+   "section": "a",
+   "short": "강정 해군기지",
+   "name": "제주 강정 해군기지 반대",
+   "period": "2007~",
+   "start": 2007,
+   "end": null,
+   "open": true,
+   "rule": "건설 반대 · 공사 중단 요구"
+  },
+  {
+   "key": "mad_cow_2008",
+   "section": "a",
+   "short": "광우병",
+   "name": "광우병 쇠고기 수입 반대",
+   "period": "2008",
+   "start": 2008,
+   "end": 2008,
+   "open": false,
+   "rule": "수입 반대 · 광우병 위험 주장"
+  },
+  {
+   "key": "nis_2013",
+   "section": "a",
+   "short": "국정원 대선개입",
+   "name": "국정원 대선개입 규탄",
+   "period": "2013",
+   "start": 2013,
+   "end": 2013,
+   "open": false,
+   "rule": "진상규명·특검 · 국정원 개혁 · 당시 정부 책임 중 하나"
+  },
+  {
+   "key": "sewol_2014",
+   "section": "a",
+   "short": "세월호",
+   "name": "세월호 참사",
+   "period": "2014~",
+   "start": 2014,
+   "end": null,
+   "open": true,
+   "rule": "진상조사 · 특별법 · 당시 정부 책임 중 하나"
+  },
+  {
+   "key": "minjung_2015",
+   "section": "a",
+   "short": "민중총궐기",
+   "name": "노동개혁·국정교과서 반대 (민중총궐기)",
+   "period": "2015~16",
+   "start": 2015,
+   "end": 2016,
+   "open": false,
+   "rule": "노동개혁 반대 · 교과서 국정화 반대 · 정부 퇴진 중 하나"
+  },
+  {
+   "key": "park_impeach_2016",
+   "section": "a",
+   "short": "박근혜 탄핵",
+   "name": "박근혜 대통령 탄핵",
+   "period": "2016~17",
+   "start": 2016,
+   "end": 2017,
+   "open": false,
+   "rule": "퇴진·탄핵 찬성"
+  },
+  {
+   "key": "thaad_2016",
+   "section": "a",
+   "short": "사드",
+   "name": "사드 배치 반대",
+   "period": "2016~",
+   "start": 2016,
+   "end": null,
+   "open": true,
+   "rule": "배치 반대·철회 요구"
+  },
+  {
+   "key": "prosecution_2019",
+   "section": "a",
+   "short": "검찰개혁",
+   "name": "검찰개혁·조국 지지 촛불",
+   "period": "2019",
+   "start": 2019,
+   "end": 2019,
+   "open": false,
+   "rule": "조국 장관 지지 · 검찰개혁 · 공수처 설치 중 하나"
+  },
+  {
+   "key": "fukushima_2023",
+   "section": "a",
+   "short": "오염수",
+   "name": "후쿠시마 오염수 방류 반대",
+   "period": "2021~23",
+   "start": 2021,
+   "end": 2023,
+   "open": false,
+   "rule": "방류 반대 · 정부 용인 규탄 · 수입 금지 요구 중 하나"
+  },
+  {
+   "key": "itaewon_2022",
+   "section": "a",
+   "short": "이태원",
+   "name": "이태원 참사",
+   "period": "2022~",
+   "start": 2022,
+   "end": null,
+   "open": true,
+   "rule": "진상조사 · 특별법 · 당시 정부 책임 중 하나"
+  },
+  {
+   "key": "yoon_impeach_2024",
+   "section": "a",
+   "short": "윤석열 탄핵",
+   "name": "윤석열 대통령 탄핵",
+   "period": "2024~25",
+   "start": 2024,
+   "end": 2025,
+   "open": false,
+   "rule": "퇴진·탄핵 찬성"
+  },
+  {
+   "key": "park_impeach_oppose_2016",
+   "section": "b",
+   "short": "박근혜 탄핵 반대",
+   "name": "박근혜 대통령 탄핵 반대",
+   "period": "2016~17",
+   "start": 2016,
+   "end": 2017,
+   "open": false,
+   "rule": "탄핵 반대·기각 요구"
+  },
+  {
+   "key": "moon_gov_2019",
+   "section": "b",
+   "short": "패스트트랙·조국",
+   "name": "문재인 정부 규탄 (패스트트랙·조국)",
+   "period": "2019",
+   "start": 2019,
+   "end": 2019,
+   "open": false,
+   "rule": "패스트트랙 반대 · 조국 장관 사퇴 요구 · 정부 규탄 중 하나"
+  },
+  {
+   "key": "moon_resign_2020",
+   "section": "b",
+   "short": "문재인 퇴진",
+   "name": "문재인 퇴진 (광복절·개천절)",
+   "period": "2020",
+   "start": 2020,
+   "end": 2020,
+   "open": false,
+   "rule": "문재인 대통령 퇴진 요구"
+  },
+  {
+   "key": "election_fraud_2020",
+   "section": "b",
+   "short": "부정선거",
+   "name": "부정선거 주장",
+   "period": "2020~",
+   "start": 2020,
+   "end": null,
+   "open": true,
+   "rule": "선거 조작 주장 · 재선거·수개표 요구 중 하나"
+  },
+  {
+   "key": "anti_discrimination_law_oppose_2020",
+   "section": "b",
+   "short": "차별금지법 반대",
+   "name": "차별금지법·동성혼 반대",
+   "period": "2020~",
+   "start": 2020,
+   "end": null,
+   "open": true,
+   "rule": "차별금지법 제정 반대 · 동성혼 법제화 반대 중 하나"
+  },
+  {
+   "key": "yoon_impeach_oppose_2024",
+   "section": "b",
+   "short": "윤석열 탄핵 반대",
+   "name": "윤석열 대통령 탄핵 반대",
+   "period": "2024~25",
+   "start": 2024,
+   "end": 2025,
+   "open": false,
+   "rule": "탄핵 반대·기각 · 석방 요구 중 하나"
+  },
+  {
+   "key": "yoon_again_2025",
+   "section": "b",
+   "short": "윤 어게인",
+   "name": "윤 어게인",
+   "period": "2025~",
+   "start": 2025,
+   "end": null,
+   "open": true,
+   "rule": "전 대통령 복귀 주장 · 탄핵 무효 주장 중 하나"
+  },
+  {
+   "key": "anti_china_2025",
+   "section": "b",
+   "short": "반중",
+   "name": "반중 집회",
+   "period": "2025~",
+   "start": 2025,
+   "end": null,
+   "open": true,
+   "rule": "중국 반대 구호를 내건 집회·성명"
+  }
+ ],
+ "sources": {
+  "pressian_36293": {
+   "url": "https://www.pressian.com/pages/articles/36293",
+   "outlet": "프레시안",
+   "title": "\"제주 해군기지, 멸종위기종 '제노사이드' 당할 것\"",
+   "quote": "제주 해군기지 건설을 즉각 중단하라고 요구했다"
+  },
+  "pspd_778135": {
+   "url": "https://peoplepower21.org/?p=778135",
+   "outlet": "참여연대",
+   "title": "전국 각계인사 417명 제주해군기지 건설 중단 촉구",
+   "quote": "제주해군기지 건설 중단을 촉구하는 기자회견을 개최하였다"
+  },
+  "pressian_62429": {
+   "url": "https://pressian.com/pages/articles/62429",
+   "outlet": "프레시안",
+   "title": "\"제주 해군기지 예정지 바위 위에 한번만 서 보라!\"",
+   "quote": "강정마을 해군기지 건설 공사는 즉각 중단돼야 한다"
+  },
+  "khan_20120331": {
+   "url": "https://www.khan.co.kr/article/20120331201809A/",
+   "outlet": "경향신문",
+   "title": "주말 제주해군기지 찬·반 집회 긴장 고조",
+   "quote": "기지건설을 반대하는 강정마을회와 진보단체 등 200여명이 집결"
+  },
+  "khan_20080506": {
+   "url": "https://www.khan.co.kr/article/200805061437152",
+   "outlet": "경향신문",
+   "title": "광우병 쇠고기 수입반대 '국민회의' 출범…1500여개 단체 참여",
+   "quote": "광우병 위험 쇠고기 수입 무효화 및 재협상"
+  },
+  "pspd_1338912": {
+   "url": "https://www.peoplepower21.org/pspd100/1338912",
+   "outlet": "참여연대",
+   "title": "광우병 위험 쇠고기 수입반대 촛불집회",
+   "quote": "참여연대, 시민사회단체연대회의, 한국진보연대 등의 적극적인 제안으로 결성"
+  },
+  "khan_20131102": {
+   "url": "https://www.khan.co.kr/article/201311022233421",
+   "outlet": "경향신문",
+   "title": "서울 도심서 '국가기관 대선개입 진상 규명' 촛불집회 열려",
+   "quote": "국정원·국군사이버사령부의 댓글 의혹 진상 규명"
+  },
+  "pspd_1108721": {
+   "url": "https://peoplepower21.org/?p=1108721",
+   "outlet": "참여연대",
+   "title": "국가기관 대선개입 규탄 출근길 거리행진",
+   "quote": "특별검사(특검) 수사를 통한 진상 규명을 촉구하는 출근길 거리행진"
+  },
+  "pspd_1061382": {
+   "url": "https://peoplepower21.org/?p=1061382",
+   "outlet": "참여연대",
+   "title": "8월10일 10만 국민촛불대회 참여 호소",
+   "quote": "대선개입 진상 및 축소은폐 의혹규명을 위한 시민사회시국회의"
+  },
+  "pspd_1342955": {
+   "url": "https://peoplepower21.org/solidarity/1342955",
+   "outlet": "참여연대",
+   "title": "4월16일의약속국민연대 발족식",
+   "quote": "진상규명, 선체인양, 안전사회, 인권 실현 할 것"
+  },
+  "cpm_90183": {
+   "url": "https://cpmadang.org/collection/90183",
+   "outlet": "cpmadang",
+   "title": "세월호 참사 탄핵사유 공동의견서 제출 기자회견",
+   "quote": "국민생명권 보호 의무를 위배했으므로 탄핵사유로 인용해야"
+  },
+  "pspd_1874300": {
+   "url": "https://peoplepower21.org/solidarity/1874300",
+   "outlet": "참여연대",
+   "title": "성역없는 진상규명 완수와 생명안전사회 건설을 위한 국민대회",
+   "quote": "성역없는 진상규명 완수와 생명안전사회 건설을 위한 국민대회"
+  },
+  "cpm_47502": {
+   "url": "https://cpmadang.org/node/47502",
+   "outlet": "cpmadang",
+   "title": "2015 민중총궐기 현장",
+   "quote": "노동개악 저지, 역사 교과서 국정화 반대, 언론장악 분쇄 등을 요구"
+  },
+  "kait_145629": {
+   "url": "https://archivecenter.net/kaitArchive/attach/140000/145629/20260105035908684.pdf",
+   "outlet": "한국노동사회연구소 아카이브",
+   "title": "민중총궐기 대회 계획",
+   "quote": "주최 : 민중총궐기 투쟁본부"
+  },
+  "cpm_47290": {
+   "url": "https://cpmadang.org/node/47290",
+   "outlet": "cpmadang",
+   "title": "민중 오적, 노동개악 주범 새누리당 규탄한다",
+   "quote": "노동개악 주범 새누리당 규탄한다"
+  },
+  "kait_145653": {
+   "url": "https://archivecenter.net/kaitArchive/attach/140000/145653/20260105040605333.pdf",
+   "outlet": "한국노동사회연구소 아카이브",
+   "title": "\"박근혜 물러나라!\" 민중총궐기",
+   "quote": "2015년 노동개악을 막아내는 강력한 총파업 투쟁을 성사시키는 것"
+  },
+  "pspd_1460478": {
+   "url": "https://peoplepower21.org/solidarity/1460478",
+   "outlet": "참여연대",
+   "title": "박근혜정권 퇴진 비상국민행동 발족",
+   "quote": "박근혜 정권을 몰아내고"
+  },
+  "pspd_1461649": {
+   "url": "https://peoplepower21.org/solidarity/1461649",
+   "outlet": "참여연대",
+   "title": "11월 12일 2016 민중총궐기",
+   "quote": "박근혜 정권 퇴진! 가자 2016년 민중총궐기"
+  },
+  "pspd_1474779": {
+   "url": "https://peoplepower21.org/?p=1474779",
+   "outlet": "참여연대",
+   "title": "2016 송박영신, 10차 범국민행동의 날",
+   "quote": "박근혜 즉각퇴진·조기탄핵·적폐청산 촉구 행사"
+  },
+  "pspd_1973766": {
+   "url": "https://peoplepower21.org/changes/1994-2024/1973766",
+   "outlet": "참여연대",
+   "title": "박근혜정권 퇴진 촛불항쟁 활동 기록",
+   "quote": "상근자들을 퇴진행동에 대거 파견했다"
+  },
+  "pspd_1442309": {
+   "url": "https://peoplepower21.org/peace/1442309",
+   "outlet": "참여연대",
+   "title": "사드한국배치저지전국행동 발족",
+   "quote": "사드 한국 배치를 철회시키고자 나섰습니다"
+  },
+  "pspd_1509634": {
+   "url": "https://peoplepower21.org/peace/1509634",
+   "outlet": "참여연대",
+   "title": "사드 배치 저지 서울·성주 동시 평화행동",
+   "quote": "사드 배치 즉각 중단하라!"
+  },
+  "khan_20170329": {
+   "url": "https://www.khan.co.kr/article/201703291701001/amp",
+   "outlet": "경향신문",
+   "title": "성주골프장 진입 시도 트럭, 주민들이 막아서",
+   "quote": "국방부와 경찰을 강하게 비판했다"
+  },
+  "doc_thaad_20200529": {
+   "url": "https://docs.google.com/document/d/1tNwnAKaRnbnBuXlMDBOn_LtZx0rDFvQ9ZHVlG1vXuCs/export?format=pdf",
+   "outlet": "보도자료",
+   "title": "사드 장비 추가반입 규탄 보도자료",
+   "quote": "기습적인 사드장비 추가반입을 강력히 규탄한다"
+  },
+  "khan_20251118": {
+   "url": "https://www.khan.co.kr/article/202511181341001/",
+   "outlet": "경향신문",
+   "title": "'사드 반대' 평화교당 강제철거 예고",
+   "quote": "소성리 사드반대 현수막 훼손·절취 미군 범죄 규탄"
+  },
+  "khan_20170627": {
+   "url": "https://www.khan.co.kr/article/201706271810001/amp",
+   "outlet": "경향신문",
+   "title": "사드 찬반 단체 성주골프장 인근서 강대강 대치",
+   "quote": "서북청년단 등 극우성향 단체 200여 명이 ... 사드 배치 찬성 집회"
+  },
+  "newsis_20191012": {
+   "url": "https://www.newsis.com/view/NISX20191012_0000796677",
+   "outlet": "뉴시스",
+   "title": "마지막 '서초동 촛불' 모인 시민들",
+   "quote": "'제9차 사법적폐청산을 위한 검찰개혁 촛불문화제'를 연다"
+  },
+  "newsis_20190928": {
+   "url": "https://www.newsis.com/view/NISX20190928_0000783577",
+   "outlet": "뉴시스",
+   "title": "'국민의 명령' 돼버린 검찰개혁…서초동 촛불 어디까지",
+   "quote": "7차 검찰개혁 사법적폐청산을 위한 촛불집회"
+  },
+  "newsis_20191026": {
+   "url": "https://www.newsis.com/view/NISX20191026_0000810820",
+   "outlet": "뉴시스",
+   "title": "정경심 구속 후 첫 \"검찰개혁\" 촛불",
+   "quote": "제11차 검찰개혁·공수처 설치 여의도 촛불문화제"
+  },
+  "pspd_1946052": {
+   "url": "https://peoplepower21.org/solidarity/1946052",
+   "outlet": "참여연대",
+   "title": "후쿠시마 핵오염수 해양투기 중단 범국민대회",
+   "quote": "오염수 해양투기를 용인한 윤석열 정부를 규탄한다!"
+  },
+  "newdaily_20230826": {
+   "url": "https://www.newdaily.co.kr/site/data/html/2023/08/26/2023082600012.amp.html",
+   "outlet": "뉴데일리",
+   "title": "민주당, 오염수 범국민대회 주최",
+   "quote": "정의당, 기본소득당, 진보당 등 야당과 ... 공동 주최한 행사"
+  },
+  "pspd_1945932": {
+   "url": "https://peoplepower21.org/?p=1945932",
+   "outlet": "참여연대",
+   "title": "일본 방사성오염수 방류일정 철회 기자회견",
+   "quote": "방류일정 철회 및 경찰 집회방해 규탄 기자회견"
+  },
+  "cpm_348574": {
+   "url": "https://cpmadang.org/collection/348574",
+   "outlet": "cpmadang",
+   "title": "핵 오염수 해양투기 중단! 촛불문화제",
+   "quote": "일본 방사성 오염수 해양투기 중단! 촛불 문화제"
+  },
+  "doc_fuku_20230919": {
+   "url": "https://docs.google.com/document/d/1jkTC5xGU6yWfOxW3B6zROql4NORhjCSgbnyBkLur9PY/export?format=pdf",
+   "outlet": "보도자료",
+   "title": "오염수 2차 해양투기 중단 촉구 기자회견",
+   "quote": "오염수 2차 해양 투기 계획을 중단하고"
+  },
+  "newsis_20240119": {
+   "url": "https://www.newsis.com/view/NISX20240119_0002598227",
+   "outlet": "뉴시스",
+   "title": "658개 시민단체 \"尹, 이태원 특별법 즉각 공포하라\"",
+   "quote": "윤석열 대통령은 법률을 즉각 공포하라"
+  },
+  "newsis_20240120": {
+   "url": "https://www.newsis.com/view/NISX20240120_0002599101",
+   "outlet": "뉴시스",
+   "title": "이태원 유가족 주말 도심 집회 \"특별법 즉각 공포해야\"",
+   "quote": "10·29 이태원 참사 특별법 즉각 공포하라!"
+  },
+  "newsis_20231220": {
+   "url": "https://www.newsis.com/view/NISX20231220_0002565323",
+   "outlet": "뉴시스",
+   "title": "'눈 쌓인 길에서 오체투지' 이태원 참사 유가족",
+   "quote": "특별법 통과를 촉구하는 오체투지를 했다"
+  },
+  "pspd_1935565": {
+   "url": "https://peoplepower21.org/solidarity/1935565",
+   "outlet": "참여연대",
+   "title": "이태원 참사 특별법 발의 국민의힘 동참 호소 기자회견",
+   "quote": "10.29 이태원 참사 진상규명 특별법 제정에 동참해주실 것을 호소합니다"
+  },
+  "doc_itaewon_20230817": {
+   "url": "https://docs.google.com/document/d/1QrBX-E28mCLBgBaP08CZZSFJmn_xrurlJrj9pg6L2i4/export?format=pdf",
+   "outlet": "보도자료",
+   "title": "이태원 참사 특별법 행정안전위원회 심의 촉구 기자회견",
+   "quote": "진상규명 특별법 행정안전위원회 심의 촉구 기자회견"
+  },
+  "doc_itaewon_20230620": {
+   "url": "https://docs.google.com/document/d/1OD0HR92u3qDUmIEiIl7IdyLuCR7_3V5ShslHD8NUJN0/export?format=pdf",
+   "outlet": "보도자료",
+   "title": "이태원참사 진상규명 특별법 국회 토론회",
+   "quote": "특별법 제정의 필요성을 공론화하고 쟁점에 대해 논의할 예정"
+  },
+  "tf_20241211": {
+   "url": "https://news.tf.co.kr/read/life/2160155.htm",
+   "outlet": "더팩트",
+   "title": "1549개 단체 '尹 즉각 퇴진' 한목소리",
+   "quote": "윤석열 대통령의 즉각 퇴진을 요구하는 연대체를 출범했다"
+  },
+  "seoul_20170114": {
+   "url": "https://www.seoul.co.kr/news/society/2017/01/14/20170114800003",
+   "outlet": "서울신문",
+   "title": "혜화동 대통령 탄핵 반대 집회",
+   "quote": "탄핵 기각과 특검 해체 등을 요구했다"
+  },
+  "segye_20170107": {
+   "url": "https://www.segye.com/view/20170107001042",
+   "outlet": "세계일보",
+   "title": "코엑스 앞 제8차 태극기 집회",
+   "quote": "박근혜 대통령 탄핵을 반대하는 '제8차 태극기 집회'를 열었다"
+  },
+  "mt_20170211": {
+   "url": "https://www.mt.co.kr/society/2017/02/11/2017021117381983322",
+   "outlet": "머니투데이",
+   "title": "역대 최대규모 태극기 \"탄핵 기각까지 총력 결집\"",
+   "quote": "'탄핵기각' 구호는 집회 내내 울렸다"
+  },
+  "newsis_20170218": {
+   "url": "https://www.newsis.com/view/NISX20170218_0014713861",
+   "outlet": "뉴시스",
+   "title": "탄핵반대단체 위기감속 총력전",
+   "quote": "태극기를 흔들며 박근혜 대통령 탄핵 기각을 촉구하고 있다"
+  },
+  "khan_20170311": {
+   "url": "https://www.khan.co.kr/article/201703111539001",
+   "outlet": "경향신문",
+   "title": "제1차 국민저항운동 태극기 집회",
+   "quote": "2017년 3월 10일 대한민국의 법치주의는 사망하였습니다"
+  },
+  "newsis_20190427": {
+   "url": "https://www.newsis.com/view/NISX20190427_0000634312",
+   "outlet": "뉴시스",
+   "title": "한국당 추산 5만 집회",
+   "quote": "문재인 정부의 좌파독재 중단하라"
+  },
+  "ytn_20190525": {
+   "url": "https://www.ytn.co.kr/_ln/0101_201905251752337683",
+   "outlet": "YTN",
+   "title": "한국당 6번째 대규모 장외 집회",
+   "quote": "문재인 정부의 실정을 규탄하는 발언이 이어질 예정"
+  },
+  "newsis_20191003": {
+   "url": "https://www.newsis.com/view/NISX20191003_0000788814",
+   "outlet": "뉴시스",
+   "title": "'범보수' 개천절 정권 퇴진 집회",
+   "quote": "'문재인 정권 헌정 유린 중단과 위선자 조국 파면 촉구대회'"
+  },
+  "segye_20191003": {
+   "url": "https://www.segye.com/newsView/20191003511649",
+   "outlet": "세계일보",
+   "title": "문재인하야범국민투쟁본부 광화문 규탄대회",
+   "quote": "집회 참가자들은 '문재인 하야', '조국 감옥'이라고 적힌 손피켓"
+  },
+  "dailian_20191009": {
+   "url": "https://www.dailian.co.kr/news/view/832436/",
+   "outlet": "데일리안",
+   "title": "광화문 성난 민심",
+   "quote": "\"문재인 하야\", \"조국 감옥\" 등의 구호를 외치며"
+  },
+  "newsis_20191009": {
+   "url": "https://www.newsis.com/view/NISX20191009_0000793799",
+   "outlet": "뉴시스",
+   "title": "한글날 '조국 규탄' 광화문 보수 집회",
+   "quote": "일파만파·서울대 등 광화문 곳곳 집회"
+  },
+  "newsis_20191019": {
+   "url": "https://www.newsis.com/view/NISX20191019_0000803711",
+   "outlet": "뉴시스",
+   "title": "조국 사퇴에도 광화문 모인 한국당",
+   "quote": "조국 사퇴 후 첫 장외집회…'反조국'서 '反문재인'으로"
+  },
+  "newsis_20191005": {
+   "url": "https://www.newsis.com/view/NISX20191005_0000790316",
+   "outlet": "뉴시스",
+   "title": "가족·연인 나들이 같은 서초동 집회",
+   "quote": "우리공화당·자유연대는 맞은편서 조국반대 집회"
+  },
+  "newdaily_20200815": {
+   "url": "https://www.newdaily.co.kr/site/data/html/2020/08/15/2020081500015.amp.html",
+   "outlet": "뉴데일리",
+   "title": "광복절 광화문 대규모 집회",
+   "quote": "'8.15 문재인 퇴진 국민대회'를 개최했다"
+  },
+  "newspim_20200904": {
+   "url": "https://newspim.com/news/view/20200904000556",
+   "outlet": "뉴스핌",
+   "title": "광복절 이어 개천절에도, 보수단체 집회",
+   "quote": "대한민국바로세우기 국민운동본부·자유연대 주최로 문재인 퇴진 8.15 국민대회"
+  },
+  "newdaily_20201009": {
+   "url": "https://www.newdaily.co.kr/site/data/html/2020/10/09/2020100900033.amp.html",
+   "outlet": "뉴데일리",
+   "title": "8.15비상대책위원회 한글날 기자회견",
+   "quote": "서민경제 파탄, 문재인 OUT"
+  },
+  "inews24_20251003": {
+   "url": "https://www.inews24.com/view/1893744",
+   "outlet": "아이뉴스24",
+   "title": "서울 도심서 보수단체 집회⋯\"차이나 아웃\"",
+   "quote": "부정선거 주장 상징물과 함께"
+  },
+  "daum_20260627": {
+   "url": "https://v.daum.net/v/20260627192100162",
+   "outlet": "CBS노컷뉴스",
+   "title": "쪼개진 '부정선거 재선거'",
+   "quote": "'부정선거·부정부패방지대' 행사에 참석해"
+  },
+  "mt_20250923": {
+   "url": "https://www.mt.co.kr/society/2025/09/23/2025092313415195906",
+   "outlet": "머니투데이",
+   "title": "오늘밤 또 명동서 '반중 시위'",
+   "quote": "집회 이름은 '부정선거 규탄'이지만 ... CCP(중국 공산당)"
+  },
+  "daum_20250913": {
+   "url": "https://v.daum.net/v/20250913050408391",
+   "outlet": "CBS노컷뉴스",
+   "title": "'반중 시위' 가보니",
+   "quote": "명동에서 '부정선거 규탄' 행진 집회를 열었다"
+  },
+  "newsis_20250930": {
+   "url": "https://mobile.newsis.com/view/NISX20250930_0003349653",
+   "outlet": "뉴시스",
+   "title": "명동 '혐중' 집회 현황",
+   "quote": "민초결사대 등 보수단체 회원 200여명 ... '혐중 집회'를 열었다"
+  },
+  "newsis_20251003": {
+   "url": "https://mobile.newsis.com/view/NISX20251003_0003355288",
+   "outlet": "뉴시스",
+   "title": "자유대학 정부 규탄 집회",
+   "quote": "행진하면서는 \"차이나 아웃\" 외쳐"
+  },
+  "kuki_20241027": {
+   "url": "https://www.kukinews.com/article/view/kuk202410270042?skin=photo",
+   "outlet": "쿠키뉴스",
+   "title": "개신교 '차별금지법·동성혼 반대' 대규모 집회",
+   "quote": "한국교회총연합, 한국장로교총연합회 등 한국 교회 대다수와 120개 시민단체"
+  },
+  "daum_20241027": {
+   "url": "https://v.daum.net/v/20241027171011987",
+   "outlet": "한겨레",
+   "title": "\"동성혼 막은 거룩한 나라로\" 도심 집회",
+   "quote": "동성혼과 차별금지법 제정에 반대하는 목소리를 높였다"
+  },
+  "seoul_20200518": {
+   "url": "https://www.seoul.co.kr/news/2020/05/18/20200518027008",
+   "outlet": "서울신문",
+   "title": "성소수자 혐오, 그 밑바닥에는",
+   "quote": "차별금지법 제정을 '한국 교회의 생존이 걸린 매우 위험한 행위'"
+  },
+  "newsis_20250222": {
+   "url": "https://www.newsis.com/view/NISX20250222_0003074964",
+   "outlet": "뉴시스",
+   "title": "\"탄핵반대\" 대전도 대규모집회",
+   "quote": "보수성향 기독교 단체인 세이브코리아 주관으로 열렸다"
+  },
+  "ytn_20250208": {
+   "url": "https://www.ytn.co.kr/_ln/0115_202502081501316510",
+   "outlet": "YTN",
+   "title": "대구 윤석열 대통령 탄핵 반대 집회",
+   "quote": "'세이브코리아'가 동대구역 박정희 광장에서 주최한 윤 대통령 탄핵 반대 집회"
+  },
+  "newdaily_20250215": {
+   "url": "https://www.newdaily.co.kr/site/data/html/2025/02/15/2025021500015.amp.html",
+   "outlet": "뉴데일리",
+   "title": "광주 금남로 탄핵 반대 집회",
+   "quote": "'국가비상기도회 및 시국대회'를 개최했다"
+  },
+  "newsis_20250301": {
+   "url": "https://www.newsis.com/view/NISX20250301_0003083538",
+   "outlet": "뉴시스",
+   "title": "3·1절 광화문·여의도 '탄핵 반대 집회'",
+   "quote": "'사기탄핵 원천 무효' 등이 적힌 피켓"
+  },
+  "newsis_20250315": {
+   "url": "https://mobile.newsis.com/view/NISX20250329_0003118498",
+   "outlet": "뉴시스",
+   "title": "광화문, 여의도에서 각각 탄반집회",
+   "quote": "윤석열 대통령 탄핵 기각을 촉구하고 있다"
+  },
+  "newsis_20250419": {
+   "url": "https://www.newsis.com/view/NISX20250419_0003145803",
+   "outlet": "뉴시스",
+   "title": "\"윤 어게인\" vs \"재구속\"…서울 도심 곳곳 집회",
+   "quote": "\"윤 어게인\" vs \"재구속\""
+  },
+  "supple_daegukbon": {
+   "url": "https://supple.kr/news/cmoy3wme40000qjimd6qh4om4",
+   "outlet": "연합뉴스(재게재)",
+   "title": "촛불행동·전광훈목사, 주말 광화문서 각각 집회",
+   "quote": "윤 대통령이 현역 대통령으로 다시 돌아올 것"
+  }
+ },
+ "records": [
+  {
+   "id": 0,
+   "issue": "gangjeong_2007",
+   "org": "제주해군기지건설 저지를 위한 전국대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pressian_36293"
+  },
+  {
+   "id": 1,
+   "issue": "gangjeong_2007",
+   "org": "참여연대",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pressian_36293"
+  },
+  {
+   "id": 2,
+   "issue": "gangjeong_2007",
+   "org": "한국여성단체연합",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pressian_36293"
+  },
+  {
+   "id": 3,
+   "issue": "gangjeong_2007",
+   "org": "한국기독교교회협의회",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pressian_36293"
+  },
+  {
+   "id": 4,
+   "issue": "gangjeong_2007",
+   "org": "한국진보연대",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pressian_36293"
+  },
+  {
+   "id": 5,
+   "issue": "gangjeong_2007",
+   "org": "제주해군기지건설 저지를 위한 전국대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2011-06-08",
+   "location": "환경재단 레이첼카슨홀",
+   "stance": "부합",
+   "source": "pspd_778135"
+  },
+  {
+   "id": 6,
+   "issue": "gangjeong_2007",
+   "org": "제주해군기지건설 저지를 위한 전국대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": null,
+   "location": "참여연대",
+   "stance": "부합",
+   "source": "pressian_62429"
+  },
+  {
+   "id": 7,
+   "issue": "gangjeong_2007",
+   "org": "강정마을회",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2012-03-31",
+   "location": "해군 제주기지사업단 앞",
+   "stance": "부합",
+   "source": "khan_20120331"
+  },
+  {
+   "id": 8,
+   "issue": "mad_cow_2008",
+   "org": "광우병 위험 미국산 쇠고기 전면 수입을 반대하는 국민대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2008-05-06",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "khan_20080506"
+  },
+  {
+   "id": 9,
+   "issue": "mad_cow_2008",
+   "org": "보건의료단체연합",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2008-05-06",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "khan_20080506"
+  },
+  {
+   "id": 10,
+   "issue": "mad_cow_2008",
+   "org": "참여연대",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2008-05-06",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "pspd_1338912"
+  },
+  {
+   "id": 11,
+   "issue": "mad_cow_2008",
+   "org": "시민사회단체연대회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2008-05-06",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "pspd_1338912"
+  },
+  {
+   "id": 12,
+   "issue": "mad_cow_2008",
+   "org": "한국진보연대",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2008-05-06",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "pspd_1338912"
+  },
+  {
+   "id": 13,
+   "issue": "nis_2013",
+   "org": "국가정보원 정치공작 대선개입 시민사회 시국회의",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2013-11-02",
+   "location": "서린동 영풍문고 앞",
+   "stance": "부합",
+   "source": "khan_20131102"
+  },
+  {
+   "id": 14,
+   "issue": "nis_2013",
+   "org": "대한민국재향경우회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2013-11-02",
+   "location": "보신각 앞",
+   "stance": "반대",
+   "source": "khan_20131102"
+  },
+  {
+   "id": 15,
+   "issue": "nis_2013",
+   "org": "대한민국고엽제전우회",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2013-11-02",
+   "location": "보신각 앞",
+   "stance": "반대",
+   "source": "khan_20131102"
+  },
+  {
+   "id": 16,
+   "issue": "nis_2013",
+   "org": "참여연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2013-12-02",
+   "location": "세종로~청와대 앞",
+   "stance": "부합",
+   "source": "pspd_1108721"
+  },
+  {
+   "id": 17,
+   "issue": "nis_2013",
+   "org": "국가정보원 정치공작 대선개입 시민사회 시국회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2013-08-08",
+   "location": null,
+   "stance": "부합",
+   "source": "pspd_1061382"
+  },
+  {
+   "id": 18,
+   "issue": "sewol_2014",
+   "org": "4·16연대",
+   "role": "주최",
+   "type": "기타",
+   "date": "2015-06-28",
+   "location": "서울여성플라자",
+   "stance": "부합",
+   "source": "pspd_1342955"
+  },
+  {
+   "id": 19,
+   "issue": "sewol_2014",
+   "org": "4·16세월호참사국민조사위원회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 20,
+   "issue": "sewol_2014",
+   "org": "4·16연대",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 21,
+   "issue": "sewol_2014",
+   "org": "4·16세월호참사 가족협의회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 22,
+   "issue": "sewol_2014",
+   "org": "민주사회를 위한 변호사모임",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 23,
+   "issue": "sewol_2014",
+   "org": "민주주의법학연구회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 24,
+   "issue": "sewol_2014",
+   "org": "참여연대",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2017-01-19",
+   "location": "헌법재판소 앞",
+   "stance": "부합",
+   "source": "cpm_90183"
+  },
+  {
+   "id": 25,
+   "issue": "sewol_2014",
+   "org": "4·16연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2022-04-09",
+   "location": "세월호 기억공간 앞",
+   "stance": "부합",
+   "source": "pspd_1874300"
+  },
+  {
+   "id": 26,
+   "issue": "minjung_2015",
+   "org": "민중총궐기 투쟁본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2015-11-14",
+   "location": "광화문",
+   "stance": "부합",
+   "source": "kait_145629"
+  },
+  {
+   "id": 27,
+   "issue": "minjung_2015",
+   "org": "민중총궐기 투쟁본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2015-11-14",
+   "location": "광화문",
+   "stance": "부합",
+   "source": "cpm_47502"
+  },
+  {
+   "id": 28,
+   "issue": "minjung_2015",
+   "org": "전국민주노동조합총연맹",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2015-11-14",
+   "location": "광화문",
+   "stance": "부합",
+   "source": "cpm_47502"
+  },
+  {
+   "id": 29,
+   "issue": "minjung_2015",
+   "org": "전국민주노동조합총연맹",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2015-11-11",
+   "location": null,
+   "stance": "부합",
+   "source": "cpm_47290"
+  },
+  {
+   "id": 30,
+   "issue": "minjung_2015",
+   "org": "민중총궐기 투쟁본부",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2015-11-11",
+   "location": null,
+   "stance": "부합",
+   "source": "cpm_47290"
+  },
+  {
+   "id": 31,
+   "issue": "minjung_2015",
+   "org": "전국민주노동조합총연맹",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2015-12-05",
+   "location": null,
+   "stance": "부합",
+   "source": "kait_145653"
+  },
+  {
+   "id": 32,
+   "issue": "park_impeach_2016",
+   "org": "박근혜정권퇴진 비상국민행동",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2016-11-09",
+   "location": "프란치스코교육회관",
+   "stance": "부합",
+   "source": "pspd_1460478"
+  },
+  {
+   "id": 33,
+   "issue": "park_impeach_2016",
+   "org": "민중총궐기 투쟁본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2016-11-12",
+   "location": "서울시청 광장",
+   "stance": "부합",
+   "source": "pspd_1461649"
+  },
+  {
+   "id": 34,
+   "issue": "park_impeach_2016",
+   "org": "박근혜정권퇴진 비상국민행동",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2016-11-12",
+   "location": "서울시청 광장",
+   "stance": "부합",
+   "source": "pspd_1461649"
+  },
+  {
+   "id": 35,
+   "issue": "park_impeach_2016",
+   "org": "전국민주노동조합총연맹",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2016-11-12",
+   "location": "서울시청 광장",
+   "stance": "부합",
+   "source": "pspd_1461649"
+  },
+  {
+   "id": 36,
+   "issue": "park_impeach_2016",
+   "org": "박근혜정권퇴진 비상국민행동",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2016-12-31",
+   "location": "광화문광장",
+   "stance": "부합",
+   "source": "pspd_1474779"
+  },
+  {
+   "id": 37,
+   "issue": "park_impeach_2016",
+   "org": "참여연대",
+   "role": "참여",
+   "type": "기타",
+   "date": null,
+   "location": null,
+   "stance": "부합",
+   "source": "pspd_1973766"
+  },
+  {
+   "id": 38,
+   "issue": "thaad_2016",
+   "org": "사드한국배치저지전국행동",
+   "role": "주최",
+   "type": "기자회견",
+   "date": null,
+   "location": null,
+   "stance": "부합",
+   "source": "pspd_1442309"
+  },
+  {
+   "id": 39,
+   "issue": "thaad_2016",
+   "org": "사드배치철회 성주투쟁위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 40,
+   "issue": "thaad_2016",
+   "org": "사드배치반대 김천시민대책위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 41,
+   "issue": "thaad_2016",
+   "org": "원불교 성주성지수호비상대책위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 42,
+   "issue": "thaad_2016",
+   "org": "사드한국배치저지전국행동",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 43,
+   "issue": "thaad_2016",
+   "org": "사드배치반대 대구경북대책위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 44,
+   "issue": "thaad_2016",
+   "org": "사드배치저지 부산울산경남대책위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-06-03",
+   "location": "보신각 앞·소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "pspd_1509634"
+  },
+  {
+   "id": 45,
+   "issue": "thaad_2016",
+   "org": "사드배치철회 성주투쟁위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-03-29",
+   "location": "소성리 마을회관 앞",
+   "stance": "부합",
+   "source": "khan_20170329"
+  },
+  {
+   "id": 46,
+   "issue": "thaad_2016",
+   "org": "사드한국배치저지전국행동",
+   "role": "참여",
+   "type": "성명·시국선언",
+   "date": "2017-03-29",
+   "location": null,
+   "stance": "부합",
+   "source": "khan_20170329"
+  },
+  {
+   "id": 47,
+   "issue": "thaad_2016",
+   "org": "사드배치반대 김천시민대책위원회",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2020-05-29",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_thaad_20200529"
+  },
+  {
+   "id": 48,
+   "issue": "thaad_2016",
+   "org": "원불교 성주성지수호비상대책위원회",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2020-05-29",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_thaad_20200529"
+  },
+  {
+   "id": 49,
+   "issue": "thaad_2016",
+   "org": "사드배치반대 대구경북대책위원회",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2020-05-29",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_thaad_20200529"
+  },
+  {
+   "id": 50,
+   "issue": "thaad_2016",
+   "org": "사드한국배치저지전국행동",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": "2020-05-29",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_thaad_20200529"
+  },
+  {
+   "id": 51,
+   "issue": "thaad_2016",
+   "org": "사드철회평화회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2025-05-15",
+   "location": "칠곡 캠프캐롤 앞",
+   "stance": "부합",
+   "source": "khan_20251118"
+  },
+  {
+   "id": 52,
+   "issue": "thaad_2016",
+   "org": "서북청년단",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2017-06-27",
+   "location": "소성리 마을회관 인근",
+   "stance": "반대",
+   "source": "khan_20170627"
+  },
+  {
+   "id": 53,
+   "issue": "prosecution_2019",
+   "org": "사법적폐청산 범국민시민연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-12",
+   "location": "서울중앙지검 앞",
+   "stance": "부합",
+   "source": "newsis_20191012"
+  },
+  {
+   "id": 54,
+   "issue": "prosecution_2019",
+   "org": "사법적폐청산 범국민시민연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-09-28",
+   "location": "서울중앙지검 앞",
+   "stance": "부합",
+   "source": "newsis_20190928"
+  },
+  {
+   "id": 55,
+   "issue": "prosecution_2019",
+   "org": "사법적폐청산 범국민시민연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-26",
+   "location": "여의도공원 앞",
+   "stance": "부합",
+   "source": "newsis_20191026"
+  },
+  {
+   "id": 56,
+   "issue": "fukushima_2023",
+   "org": "일본방사성오염수해양투기저지공동행동",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-08-26",
+   "location": "프레스센터 앞",
+   "stance": "부합",
+   "source": "pspd_1946052"
+  },
+  {
+   "id": 57,
+   "issue": "fukushima_2023",
+   "org": "더불어민주당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-08-26",
+   "location": "태평로 일대",
+   "stance": "부합",
+   "source": "newdaily_20230826"
+  },
+  {
+   "id": 58,
+   "issue": "fukushima_2023",
+   "org": "정의당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-08-26",
+   "location": "태평로 일대",
+   "stance": "부합",
+   "source": "newdaily_20230826"
+  },
+  {
+   "id": 59,
+   "issue": "fukushima_2023",
+   "org": "기본소득당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-08-26",
+   "location": "태평로 일대",
+   "stance": "부합",
+   "source": "newdaily_20230826"
+  },
+  {
+   "id": 60,
+   "issue": "fukushima_2023",
+   "org": "진보당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-08-26",
+   "location": "태평로 일대",
+   "stance": "부합",
+   "source": "newdaily_20230826"
+  },
+  {
+   "id": 61,
+   "issue": "fukushima_2023",
+   "org": "일본방사성오염수해양투기저지공동행동",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-08-23",
+   "location": "일본대사관 앞",
+   "stance": "부합",
+   "source": "pspd_1945932"
+  },
+  {
+   "id": 62,
+   "issue": "fukushima_2023",
+   "org": "불교환경연대",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2023-08-23",
+   "location": "일본대사관 앞",
+   "stance": "부합",
+   "source": "pspd_1945932"
+  },
+  {
+   "id": 63,
+   "issue": "fukushima_2023",
+   "org": "일본방사성오염수해양투기저지공동행동",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 64,
+   "issue": "fukushima_2023",
+   "org": "녹색연합",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 65,
+   "issue": "fukushima_2023",
+   "org": "서울환경운동연합",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 66,
+   "issue": "fukushima_2023",
+   "org": "진보당",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 67,
+   "issue": "fukushima_2023",
+   "org": "시민사회단체연대회의",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 68,
+   "issue": "fukushima_2023",
+   "org": "진보대학생넷",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2023-09-07",
+   "location": "세종문화회관 계단",
+   "stance": "부합",
+   "source": "cpm_348574"
+  },
+  {
+   "id": 69,
+   "issue": "fukushima_2023",
+   "org": "일본방사성오염수해양투기저지공동행동",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-09-19",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_fuku_20230919"
+  },
+  {
+   "id": 70,
+   "issue": "fukushima_2023",
+   "org": "한살림연합",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2023-09-19",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_fuku_20230919"
+  },
+  {
+   "id": 71,
+   "issue": "fukushima_2023",
+   "org": "서울환경운동연합",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2023-09-19",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_fuku_20230919"
+  },
+  {
+   "id": 72,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 유가족협의회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2024-01-19",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "newsis_20240119"
+  },
+  {
+   "id": 73,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 시민대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2024-01-19",
+   "location": "프레스센터",
+   "stance": "부합",
+   "source": "newsis_20240119"
+  },
+  {
+   "id": 74,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 유가족협의회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2024-01-20",
+   "location": "광화문광장 인근",
+   "stance": "부합",
+   "source": "newsis_20240120"
+  },
+  {
+   "id": 75,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 시민대책회의",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2024-01-20",
+   "location": "광화문광장 인근",
+   "stance": "부합",
+   "source": "newsis_20240120"
+  },
+  {
+   "id": 76,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 유가족협의회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-12-20",
+   "location": "국회 앞",
+   "stance": "부합",
+   "source": "newsis_20231220"
+  },
+  {
+   "id": 77,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 시민대책회의",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2023-12-20",
+   "location": "국회 앞",
+   "stance": "부합",
+   "source": "newsis_20231220"
+  },
+  {
+   "id": 78,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 유가족협의회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-04-18",
+   "location": "국민의힘 당사 앞",
+   "stance": "부합",
+   "source": "pspd_1935565"
+  },
+  {
+   "id": 79,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 시민대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-04-18",
+   "location": "국민의힘 당사 앞",
+   "stance": "부합",
+   "source": "pspd_1935565"
+  },
+  {
+   "id": 80,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 유가족협의회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-08-17",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_itaewon_20230817"
+  },
+  {
+   "id": 81,
+   "issue": "itaewon_2022",
+   "org": "10·29이태원참사 시민대책회의",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2023-08-17",
+   "location": null,
+   "stance": "부합",
+   "source": "doc_itaewon_20230817"
+  },
+  {
+   "id": 82,
+   "issue": "itaewon_2022",
+   "org": "더불어민주당",
+   "role": "주최",
+   "type": "기타",
+   "date": "2023-06-20",
+   "location": "국회",
+   "stance": "부합",
+   "source": "doc_itaewon_20230620"
+  },
+  {
+   "id": 83,
+   "issue": "yoon_impeach_2024",
+   "org": "윤석열즉각퇴진·사회대개혁 비상행동",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 84,
+   "issue": "yoon_impeach_2024",
+   "org": "참여연대",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 85,
+   "issue": "yoon_impeach_2024",
+   "org": "전국민주노동조합총연맹",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 86,
+   "issue": "yoon_impeach_2024",
+   "org": "민주사회를 위한 변호사모임",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 87,
+   "issue": "yoon_impeach_2024",
+   "org": "경제정의실천시민연합",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 88,
+   "issue": "yoon_impeach_2024",
+   "org": "한국노동조합총연맹",
+   "role": "참여",
+   "type": "기자회견",
+   "date": "2024-12-11",
+   "location": "향린교회",
+   "stance": "부합",
+   "source": "tf_20241211"
+  },
+  {
+   "id": 89,
+   "issue": "park_impeach_oppose_2016",
+   "org": "대통령 탄핵기각을 위한 국민총궐기운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-01-14",
+   "location": "혜화로터리",
+   "stance": "부합",
+   "source": "seoul_20170114"
+  },
+  {
+   "id": 90,
+   "issue": "park_impeach_oppose_2016",
+   "org": "박근혜를 사랑하는 모임",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-01-14",
+   "location": "혜화로터리",
+   "stance": "부합",
+   "source": "seoul_20170114"
+  },
+  {
+   "id": 91,
+   "issue": "park_impeach_oppose_2016",
+   "org": "대통령 탄핵기각을 위한 국민총궐기운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-01-07",
+   "location": "코엑스 앞",
+   "stance": "부합",
+   "source": "segye_20170107"
+  },
+  {
+   "id": 92,
+   "issue": "park_impeach_oppose_2016",
+   "org": "박근혜를 사랑하는 모임",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2017-01-07",
+   "location": "코엑스 앞",
+   "stance": "부합",
+   "source": "segye_20170107"
+  },
+  {
+   "id": 93,
+   "issue": "park_impeach_oppose_2016",
+   "org": "대통령 탄핵기각을 위한 국민총궐기운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-02-11",
+   "location": "대한문 앞",
+   "stance": "부합",
+   "source": "mt_20170211"
+  },
+  {
+   "id": 94,
+   "issue": "park_impeach_oppose_2016",
+   "org": "대통령 탄핵기각을 위한 국민총궐기운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-02-18",
+   "location": "대한문 앞",
+   "stance": "부합",
+   "source": "newsis_20170218"
+  },
+  {
+   "id": 95,
+   "issue": "park_impeach_oppose_2016",
+   "org": "대통령 탄핵기각을 위한 국민총궐기운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2017-03-11",
+   "location": "대한문 앞",
+   "stance": "부합",
+   "source": "khan_20170311"
+  },
+  {
+   "id": 96,
+   "issue": "moon_gov_2019",
+   "org": "자유한국당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-04-27",
+   "location": "세종문화회관 앞",
+   "stance": "부합",
+   "source": "newsis_20190427"
+  },
+  {
+   "id": 97,
+   "issue": "moon_gov_2019",
+   "org": "자유한국당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-05-25",
+   "location": null,
+   "stance": "부합",
+   "source": "ytn_20190525"
+  },
+  {
+   "id": 98,
+   "issue": "moon_gov_2019",
+   "org": "자유한국당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-03",
+   "location": "세종문화회관 앞",
+   "stance": "부합",
+   "source": "newsis_20191003"
+  },
+  {
+   "id": 99,
+   "issue": "moon_gov_2019",
+   "org": "우리공화당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-03",
+   "location": "광화문 일대",
+   "stance": "부합",
+   "source": "newsis_20191003"
+  },
+  {
+   "id": 100,
+   "issue": "moon_gov_2019",
+   "org": "한국기독교총연합회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-03",
+   "location": "광화문 일대",
+   "stance": "부합",
+   "source": "newsis_20191003"
+  },
+  {
+   "id": 101,
+   "issue": "moon_gov_2019",
+   "org": "문재인하야범국민투쟁본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-03",
+   "location": "광화문광장",
+   "stance": "부합",
+   "source": "segye_20191003"
+  },
+  {
+   "id": 102,
+   "issue": "moon_gov_2019",
+   "org": "문재인하야범국민투쟁본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-09",
+   "location": "광화문광장",
+   "stance": "부합",
+   "source": "dailian_20191009"
+  },
+  {
+   "id": 103,
+   "issue": "moon_gov_2019",
+   "org": "일파만파",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-09",
+   "location": "광화문 일대",
+   "stance": "부합",
+   "source": "newsis_20191009"
+  },
+  {
+   "id": 104,
+   "issue": "moon_gov_2019",
+   "org": "자유한국당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-19",
+   "location": "광화문광장",
+   "stance": "부합",
+   "source": "newsis_20191019"
+  },
+  {
+   "id": 105,
+   "issue": "moon_gov_2019",
+   "org": "우리공화당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-05",
+   "location": "서울중앙지검 맞은편",
+   "stance": "부합",
+   "source": "newsis_20191005"
+  },
+  {
+   "id": 106,
+   "issue": "moon_gov_2019",
+   "org": "자유연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2019-10-05",
+   "location": "서울중앙지검 맞은편",
+   "stance": "부합",
+   "source": "newsis_20191005"
+  },
+  {
+   "id": 107,
+   "issue": "moon_resign_2020",
+   "org": "일파만파",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2020-08-15",
+   "location": "동화면세점 인근",
+   "stance": "부합",
+   "source": "newdaily_20200815"
+  },
+  {
+   "id": 108,
+   "issue": "moon_resign_2020",
+   "org": "대한민국바로세우기국민운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2020-08-15",
+   "location": "광화문광장 인근",
+   "stance": "부합",
+   "source": "newspim_20200904"
+  },
+  {
+   "id": 109,
+   "issue": "moon_resign_2020",
+   "org": "자유연대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2020-08-15",
+   "location": "광화문광장 인근",
+   "stance": "부합",
+   "source": "newspim_20200904"
+  },
+  {
+   "id": 110,
+   "issue": "moon_resign_2020",
+   "org": "8.15비상대책위원회",
+   "role": "주최",
+   "type": "기자회견",
+   "date": "2020-10-09",
+   "location": "광화문 인근",
+   "stance": "부합",
+   "source": "newdaily_20201009"
+  },
+  {
+   "id": 111,
+   "issue": "election_fraud_2020",
+   "org": "자유대학",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-10-03",
+   "location": "동대문역~광화문광장",
+   "stance": "부합",
+   "source": "inews24_20251003"
+  },
+  {
+   "id": 112,
+   "issue": "election_fraud_2020",
+   "org": "부정선거방지대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-10-03",
+   "location": "동대문역~광화문광장",
+   "stance": "부합",
+   "source": "inews24_20251003"
+  },
+  {
+   "id": 113,
+   "issue": "election_fraud_2020",
+   "org": "부정선거·부정부패방지대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2026-06-27",
+   "location": "올림픽공원 앞",
+   "stance": "부합",
+   "source": "daum_20260627"
+  },
+  {
+   "id": 114,
+   "issue": "election_fraud_2020",
+   "org": "민초결사대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-09-23",
+   "location": "서울중앙우체국 앞",
+   "stance": "부합",
+   "source": "mt_20250923"
+  },
+  {
+   "id": 115,
+   "issue": "election_fraud_2020",
+   "org": "민초결사대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-09-12",
+   "location": "명동",
+   "stance": "부합",
+   "source": "daum_20250913"
+  },
+  {
+   "id": 116,
+   "issue": "anti_discrimination_law_oppose_2020",
+   "org": "한국교회 200만 연합예배 및 큰 기도회 조직위원회",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2024-10-27",
+   "location": "광화문·서울시청·여의도",
+   "stance": "부합",
+   "source": "kuki_20241027"
+  },
+  {
+   "id": 117,
+   "issue": "anti_discrimination_law_oppose_2020",
+   "org": "한국교회총연합",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2024-10-27",
+   "location": "광화문·서울시청·여의도",
+   "stance": "부합",
+   "source": "kuki_20241027"
+  },
+  {
+   "id": 118,
+   "issue": "anti_discrimination_law_oppose_2020",
+   "org": "한국장로교총연합회",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2024-10-27",
+   "location": "광화문·서울시청·여의도",
+   "stance": "부합",
+   "source": "kuki_20241027"
+  },
+  {
+   "id": 119,
+   "issue": "anti_discrimination_law_oppose_2020",
+   "org": "한국교회연합",
+   "role": "참여",
+   "type": "집회·시위",
+   "date": "2024-10-27",
+   "location": "광화문·서울시청·여의도",
+   "stance": "부합",
+   "source": "daum_20241027"
+  },
+  {
+   "id": 120,
+   "issue": "anti_discrimination_law_oppose_2020",
+   "org": "한국교회연합",
+   "role": "주최",
+   "type": "성명·시국선언",
+   "date": null,
+   "location": null,
+   "stance": "부합",
+   "source": "seoul_20200518"
+  },
+  {
+   "id": 121,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "세이브코리아",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-02-22",
+   "location": "대전시청 인근",
+   "stance": "부합",
+   "source": "newsis_20250222"
+  },
+  {
+   "id": 122,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "세이브코리아",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-02-08",
+   "location": "동대구역 박정희 광장",
+   "stance": "부합",
+   "source": "ytn_20250208"
+  },
+  {
+   "id": 123,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "세이브코리아",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-02-15",
+   "location": "광주 금남로",
+   "stance": "부합",
+   "source": "newdaily_20250215"
+  },
+  {
+   "id": 124,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "대한민국바로세우기국민운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-03-01",
+   "location": "광화문 일대",
+   "stance": "부합",
+   "source": "newsis_20250301"
+  },
+  {
+   "id": 125,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "대한민국바로세우기국민운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-03-15",
+   "location": "세종대로 일대",
+   "stance": "부합",
+   "source": "newsis_20250315"
+  },
+  {
+   "id": 126,
+   "issue": "yoon_impeach_oppose_2024",
+   "org": "자유통일당",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-03-15",
+   "location": "세종대로 일대",
+   "stance": "부합",
+   "source": "newsis_20250315"
+  },
+  {
+   "id": 127,
+   "issue": "yoon_again_2025",
+   "org": "대한민국바로세우기국민운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-04-19",
+   "location": "광화문",
+   "stance": "부합",
+   "source": "newsis_20250419"
+  },
+  {
+   "id": 128,
+   "issue": "yoon_again_2025",
+   "org": "대한민국바로세우기국민운동본부",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": null,
+   "location": "광화문 동화면세점 앞",
+   "stance": "부합",
+   "source": "supple_daegukbon"
+  },
+  {
+   "id": 129,
+   "issue": "anti_china_2025",
+   "org": "민초결사대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-09-12",
+   "location": "명동",
+   "stance": "부합",
+   "source": "daum_20250913"
+  },
+  {
+   "id": 130,
+   "issue": "anti_china_2025",
+   "org": "민초결사대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-09-23",
+   "location": "서울중앙우체국 앞",
+   "stance": "부합",
+   "source": "mt_20250923"
+  },
+  {
+   "id": 131,
+   "issue": "anti_china_2025",
+   "org": "민초결사대",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-09-19",
+   "location": "명동 인근",
+   "stance": "부합",
+   "source": "newsis_20250930"
+  },
+  {
+   "id": 132,
+   "issue": "anti_china_2025",
+   "org": "자유대학",
+   "role": "주최",
+   "type": "집회·시위",
+   "date": "2025-10-03",
+   "location": "동대문역~광화문",
+   "stance": "부합",
+   "source": "newsis_20251003"
+  }
+ ]
+}

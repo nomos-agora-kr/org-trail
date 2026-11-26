@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이 단체, 어떤 활동을 했을까?</title>
+<meta name="description" content="공개된 기사·성명서에 기록된 단체의 집회·성명 활동을 출처와 함께 정리한 아카이브. 어떠한 평가도 하지 않습니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#e3b469;--rgb:227,180,105;--bg:#0a0907;--panel:#15120d;--text:#efe6d6;--strong:#fbf5ea;--dim:#cbbda6;--mute:#a59680;--ink:#1a1206;
+--line:rgba(var(--rgb),.22);--line-soft:rgba(var(--rgb),.14);--line-strong:rgba(var(--rgb),.55)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font-family:Inter,'Noto Sans KR',system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}a:hover{color:#f0cc8e}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1320px;margin:0 auto;padding:8px;display:flex;flex-direction:column;gap:8px}
+.panel{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px 18px}
+.over{display:block;font-size:13px;font-weight:700;letter-spacing:.6px;color:var(--accent)}
+.muted{color:var(--mute)}.dim{color:var(--dim)}
+.top{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:8px 16px;min-height:56px}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--accent)}
+.brand small{display:block;font-size:12px;font-weight:700;letter-spacing:.6px;color:var(--dim)}
+.brand strong{font-size:16px;color:var(--strong)}
+.stats{display:flex;gap:6px;margin-right:auto;flex-wrap:wrap}
+.stats div{display:flex;flex-direction:column;gap:2px;padding:4px 14px;border-left:1px solid var(--line-soft)}
+.stats span{font-size:12px;font-weight:700;letter-spacing:1px;color:var(--mute)}
+.stats b{font-size:18px;color:var(--strong);font-variant-numeric:tabular-nums}
+.tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tab{text-align:left;min-height:72px;padding:14px 18px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--dim)}
+.tab b{display:block;font-size:19px}.tab span{display:block;font-size:13px;margin-top:4px;opacity:.85}
+.tab[aria-pressed=true]{background:rgba(var(--rgb),.16);border-color:var(--accent);color:var(--strong)}
+.notice{display:flex;gap:14px;align-items:flex-start}
+.notice p{margin:0;font-size:15px;line-height:1.65;color:var(--dim)}.notice p b{color:var(--strong)}
+.head-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.seg{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px}
+.seg button{min-height:36px;padding:4px 14px;border:0;border-radius:999px;background:transparent;color:var(--dim);font-size:13px}
+.seg button[aria-pressed=true]{background:var(--accent);color:var(--ink);font-weight:700}
+.tl{position:relative;height:84px;margin:10px 18px 0}
+.tl .axis{position:absolute;left:0;right:0;top:34px;height:1px;background:var(--line-strong)}
+.tl .tick{position:absolute;top:30px;width:1px;height:9px;background:var(--mute);opacity:.6}
+.tl .edge{position:absolute;top:64px;font-size:12px;color:var(--mute)}
+.yr{position:absolute;top:0;transform:translateX(-50%);border:0;background:transparent;padding:0;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:44px}
+.yr .lab{font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+.yr .dot{border-radius:50%;border:2px solid var(--accent);background:var(--panel)}
+.yr.multi .dot{background:rgba(var(--rgb),.45)}
+.yr[aria-pressed=true] .lab{color:var(--accent);font-weight:700}
+.yr[aria-pressed=true] .dot{background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.span{position:absolute;top:44px;height:10px;border:1.5px solid var(--accent);border-top:0;border-radius:0 0 3px 3px}
+.span.open{border-right:0;border-radius:0 0 0 3px}
+.span-lab{position:absolute;top:58px;transform:translateX(-50%);font-size:13px;color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px;padding-top:12px;border-top:1px solid var(--line-soft)}
+.chip{min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(var(--rgb),.06);font-size:14px}
+.chip small{opacity:.75;font-size:12px;margin-left:4px}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--ink);font-weight:700}
+.hs{scrollbar-width:thin;scrollbar-color:rgba(var(--rgb),.38) rgba(var(--rgb),.07)}
+.hs::-webkit-scrollbar{height:6px;width:6px}.hs::-webkit-scrollbar-track{background:rgba(var(--rgb),.07);border-radius:9px}.hs::-webkit-scrollbar-thumb{background:rgba(var(--rgb),.38);border-radius:9px}
+.flow{margin-top:12px;overflow-x:auto;padding-bottom:8px}
+.flow-in{min-width:780px}
+.frow{display:grid;grid-template-columns:150px repeat(21,minmax(0,1fr)) 68px;align-items:center;width:100%;min-height:38px;padding:4px 0;border:0;border-bottom:1px solid var(--line-soft);background:transparent;text-align:left}
+.frow.headr{font-size:12px;color:var(--mute);min-height:auto;font-variant-numeric:tabular-nums}
+.frow.headr span{text-align:center}
+.frow .nm{font-size:14px;padding-left:6px}
+.frow[aria-pressed=true]{background:rgba(var(--rgb),.08)}.frow[aria-pressed=true] .nm{color:var(--accent);font-weight:700}
+.cell{height:22px;margin:0 1.5px;border-radius:3px;background:rgba(var(--rgb),.035)}
+.frow .pd{white-space:nowrap;font-size:12px;color:var(--mute);padding-left:6px;font-variant-numeric:tabular-nums}
+.field{position:relative;width:100%;aspect-ratio:1000/520;margin-top:12px;container-type:inline-size}
+.bub{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 4px;line-height:1.2;white-space:pre-line;background:rgba(var(--rgb),.13);border:1px solid rgba(var(--rgb),.45);color:var(--strong);transition:transform .15s}
+.bub:hover{transform:scale(1.05)}
+.bub[aria-pressed=true]{background:var(--accent);color:var(--ink);font-weight:700;box-shadow:0 0 0 3px var(--panel),0 0 0 5px var(--accent)}
+.bub.undated{border-style:dashed;background:transparent;color:var(--dim)}
+.empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:15px;text-align:center;padding:20px}
+.cells{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.oc{border-radius:10px;padding:10px 12px;border:1px solid var(--line);background:rgba(var(--rgb),.05);text-align:left}
+.oc.zero{background:transparent;border-style:dashed;color:var(--mute)}
+.oc.cur{background:rgba(var(--rgb),.16);border-color:var(--accent);color:var(--strong)}
+.oc b{display:block;font-size:24px;font-variant-numeric:tabular-nums;margin-top:6px}.oc b small{font-size:13px;font-weight:400}
+.evs{margin-top:14px;display:flex;flex-direction:column;gap:2px}
+.ev{display:grid;grid-template-columns:110px minmax(0,1fr);gap:4px 14px;padding:10px 0;border-top:1px solid var(--line-soft);font-size:14px}
+.ev .d{color:var(--dim);font-variant-numeric:tabular-nums}
+.ev q{display:block;color:var(--dim);font-size:13px;margin-top:4px;quotes:"“" "”"}
+.ev .src{font-size:13px}
+.cross{margin-top:14px;padding-top:12px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.btn{min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);font-size:14px}
+.foot{font-size:13px;color:var(--mute);line-height:1.7}
+.foot h3{font-size:15px;color:var(--strong);margin:0 0 6px}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+@media (max-width:640px){.tl{margin:10px 6px 0}.yr{min-width:22px}.yr .lab{visibility:hidden}.yr[aria-pressed=true] .lab{visibility:visible}.flow-in{min-width:820px}.tab b{font-size:16px}.ev{grid-template-columns:1fr}.stats div{padding:4px 10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header class="panel top">
+  <div class="brand"><span class="mark" aria-hidden="true"></span><span><small>공개 기록 아카이브</small><strong>이 단체, 어떤 활동을 했을까?</strong></span></div>
+  <div class="stats" id="stats"></div>
+ </header>
+
+ <nav class="tabs" id="tabs" aria-label="섹션"></nav>
+
+ <section class="panel notice" aria-label="안내">
+  <span class="over" style="flex:none;padding-top:1px">안내</span>
+  <p><b>이 사이트는 단체의 활동을 정리했을 뿐, 어떠한 평가도 하지 않습니다.</b> 원의 크기는 공개 기사·성명서에서 확인된 참여 횟수이며, 단체의 성격이나 의도를 뜻하지 않습니다. 모든 기록에는 원문 출처가 연결되어 있습니다.</p>
+ </section>
+
+ <section class="panel" aria-labelledby="tl-title">
+  <div class="head-row">
+   <span class="over" id="tl-title">사건 타임라인 · <span id="tl-hint"></span></span>
+   <div class="seg" role="group" aria-label="타임라인 보기 방식">
+    <button type="button" data-view="year">연도별</button><button type="button" data-view="flow">사건 흐름</button>
+   </div>
+  </div>
+  <div id="view-year">
+   <div class="tl" id="tl"></div>
+   <div class="chips" id="chips"></div>
+  </div>
+  <div id="view-flow" hidden>
+   <div class="flow hs"><div class="flow-in" id="flow"></div></div>
+   <div class="muted" style="margin-top:10px;font-size:13px">칸 하나 = 1년 · 색이 진할수록 그해 기록된 활동이 많습니다 · 줄을 누르면 아래에 그 사건이 표시됩니다</div>
+  </div>
+ </section>
+
+ <section class="panel" aria-labelledby="issue-name">
+  <div class="head-row" style="align-items:baseline">
+   <div><span class="over" id="issue-over"></span><span id="issue-name" style="font-size:22px;font-weight:700;color:var(--strong)"></span></div>
+   <div class="muted" style="font-size:14px">기준: <span id="issue-rule"></span></div>
+  </div>
+  <div class="field" id="field"></div>
+  <div class="muted" style="font-size:13px">원의 면적 = 이 사건 관련 참여 횟수(같은 날은 1회) · 점선 원 = 날짜 미확인 기록만 있음 · 작은 원은 이름이 숨겨져 있으니 눌러서 확인하세요</div>
+ </section>
+
+ <section class="panel" aria-labelledby="org-name" id="org">
+  <span class="over">단체 기록</span>
+  <div style="font-size:20px;font-weight:700;color:var(--strong);margin-top:2px"><span id="org-name"></span> <span id="org-sum" style="font-size:15px;font-weight:400;color:var(--dim)"></span></div>
+  <div class="cells" id="org-cells"></div>
+  <div class="evs" id="org-evs"></div>
+  <div class="cross"><span class="dim" style="font-size:14px" id="cross-txt"></span><button type="button" class="btn" id="cross-btn">이 단체를 그 섹션에서 보기 →</button></div>
+ </section>
+
+ <footer class="panel foot">
+  <div class="foot-grid">
+   <div><h3>수집 방식</h3>공개된 언론 기사와 단체 성명·보도자료에서 <b>단체명이 직접 언급된 활동</b>만 기록합니다. 개인은 기록하지 않습니다. 근거 문장은 출처마다 짧게 발췌합니다.</div>
+   <div><h3>횟수 기준</h3>각 사건의 입장 기준 중 하나라도 해당하는 활동만 셉니다. 같은 단체가 같은 사건으로 같은 날 한 활동은 기사가 여러 개여도 1회입니다. 날짜를 일 단위로 확정하지 못한 기록은 따로 표시합니다.</div>
+   <div><h3>한계</h3><span id="foot-note"></span> 언론 보도가 많은 단체일수록 기록이 많이 잡힐 수 있으며, '기록 없음'은 참여하지 않았다는 뜻이 아니라 수집한 자료에서 찾지 못했다는 뜻입니다.</div>
+  </div>
+ </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
