@@ -199,10 +199,15 @@
     $('members-title').textContent = `연대체 참가단체 명단에만 있는 단체 ${mems.length}곳 보기`;
     $('members').innerHTML = mems.map((o) => `<button type="button" class="mchip" data-o="${esc(o)}" aria-pressed="${o === st.org}">${esc(o)}</button>`).join('');
     $('members').querySelectorAll('.mchip').forEach((b) => b.addEventListener('click', () => { st.org = b.dataset.o; render(); $('org').scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
+    const MAXB = mobile() ? 24 : 40, rest = items.slice(MAXB);
+    $('others-box').hidden = !rest.length;
+    $('others-title').textContent = `그 외 직접 활동 단체 ${rest.length}곳 보기`;
+    $('others').innerHTML = rest.map((o) => `<button type="button" class="mchip" style="border-style:solid" data-o="${esc(o.name)}" aria-pressed="${o.name === st.org}">${esc(o.name)} ${o.n ? o.n + '회' : ''}</button>`).join('');
+    $('others').querySelectorAll('.mchip').forEach((b) => b.addEventListener('click', () => { st.org = b.dataset.o; render(); $('org').scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
     if (!items.length) { $('field').innerHTML = '<div class="empty">아직 수집된 직접 활동 기록이 없습니다.</div>'; if (!st.org || !inSection(st.org)) st.org = mems[0] || st.org; return; }
     const H = mobile() ? 1000 : 520;
     $('field').style.aspectRatio = `1000/${H}`;
-    const placed = layout(items, hash(issue.key), H);
+    const placed = layout(items.slice(0, MAXB), hash(issue.key), H);
     if (!st.org || !inSection(st.org)) {
       const score = (o) => issuesOf(st.sec).reduce((a, i) => a + nEv(o, i.key), 0);
       st.org = items.slice().sort((a, b) => b.n - a.n || score(b.name) - score(a.name))[0].name;
